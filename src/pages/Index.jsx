@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Heart, Paw } from 'lucide-react';
+import { Heart, Cat } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const catFacts = [
@@ -42,7 +42,7 @@ const Index = () => {
             <p className="text-lg text-green-800">{catFacts[currentFact]}</p>
           </div>
           <Button onClick={nextFact} className="mb-4">
-            <Paw className="mr-2 h-4 w-4" /> Next Fact
+            <Cat className="mr-2 h-4 w-4" /> Next Fact
           </Button>
           
           <h3 className="text-xl font-semibold mb-2 text-green-700">Do you love cats?</h3>
