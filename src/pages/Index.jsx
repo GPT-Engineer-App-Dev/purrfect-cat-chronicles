@@ -19,13 +19,13 @@ const Index = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-yellow-50">
-      <h1 className="text-4xl font-bold text-center mb-6 text-yellow-800">All About Cats</h1>
+    <div className="container mx-auto px-4 py-8 bg-gray-100">
+      <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">All About Cats</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-yellow-300">
-          <h2 className="text-2xl font-semibold mb-4 text-yellow-700">Why We Love Cats</h2>
-          <p className="mb-4 text-yellow-600">
+        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-gray-300">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Why We Love Cats</h2>
+          <p className="mb-4 text-gray-600">
             Cats are fascinating creatures that have been companions to humans for thousands of years. 
             They're known for their independence, playfulness, and affectionate nature.
           </p>
@@ -36,25 +36,25 @@ const Index = () => {
           />
         </div>
         
-        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-yellow-300">
-          <h2 className="text-2xl font-semibold mb-4 text-yellow-700">Cat Facts</h2>
-          <div className="bg-yellow-100 p-4 rounded-lg mb-4">
-            <p className="text-lg text-yellow-700">{catFacts[currentFact]}</p>
+        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-gray-300">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Cat Facts</h2>
+          <div className="bg-gray-200 p-4 rounded-lg mb-4">
+            <p className="text-lg text-gray-700">{catFacts[currentFact]}</p>
           </div>
-          <Button onClick={nextFact} className="mb-4 bg-yellow-600 hover:bg-yellow-700 text-white">
+          <Button onClick={nextFact} className="mb-4 bg-gray-600 hover:bg-gray-700 text-white">
             <Cat className="mr-2 h-4 w-4" /> Next Fact
           </Button>
           
-          <h3 className="text-xl font-semibold mb-2 text-yellow-700">Do you love cats?</h3>
+          <h3 className="text-xl font-semibold mb-2 text-gray-700">Do you love cats?</h3>
           <div className="flex items-center">
             <Button 
               onClick={() => setLikes(likes + 1)} 
               variant="outline"
-              className="flex items-center border-yellow-500 text-yellow-700 hover:bg-yellow-100"
+              className="flex items-center border-gray-500 text-gray-700 hover:bg-gray-100"
             >
               <Heart className="mr-2 h-4 w-4" /> Like
             </Button>
-            <span className="ml-4 text-yellow-600">{likes} cat lovers</span>
+            <span className="ml-4 text-gray-600">{likes} cat lovers</span>
           </div>
         </div>
       </div>
