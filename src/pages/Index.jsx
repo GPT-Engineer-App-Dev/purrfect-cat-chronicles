@@ -19,13 +19,13 @@ const Index = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-green-50">
-      <h1 className="text-4xl font-bold text-center mb-6 text-green-800">All About Cats</h1>
+    <div className="container mx-auto px-4 py-8 bg-blue-50">
+      <h1 className="text-4xl font-bold text-center mb-6 text-blue-800">All About Cats</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">Why We Love Cats</h2>
-          <p className="mb-4 text-green-900">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-700">Why We Love Cats</h2>
+          <p className="mb-4 text-blue-900">
             Cats are fascinating creatures that have been companions to humans for thousands of years. 
             They're known for their independence, playfulness, and affectionate nature.
           </p>
@@ -37,24 +37,24 @@ const Index = () => {
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">Cat Facts</h2>
-          <div className="bg-green-100 p-4 rounded-lg mb-4">
-            <p className="text-lg text-green-800">{catFacts[currentFact]}</p>
+          <h2 className="text-2xl font-semibold mb-4 text-blue-700">Cat Facts</h2>
+          <div className="bg-blue-100 p-4 rounded-lg mb-4">
+            <p className="text-lg text-blue-800">{catFacts[currentFact]}</p>
           </div>
-          <Button onClick={nextFact} className="mb-4">
+          <Button onClick={nextFact} className="mb-4 bg-blue-500 hover:bg-blue-600">
             <Cat className="mr-2 h-4 w-4" /> Next Fact
           </Button>
           
-          <h3 className="text-xl font-semibold mb-2 text-green-700">Do you love cats?</h3>
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">Do you love cats?</h3>
           <div className="flex items-center">
             <Button 
               onClick={() => setLikes(likes + 1)} 
               variant="outline"
-              className="flex items-center border-green-500 text-green-700 hover:bg-green-100"
+              className="flex items-center border-blue-500 text-blue-700 hover:bg-blue-100"
             >
               <Heart className="mr-2 h-4 w-4" /> Like
             </Button>
-            <span className="ml-4 text-green-800">{likes} cat lovers</span>
+            <span className="ml-4 text-blue-800">{likes} cat lovers</span>
           </div>
         </div>
       </div>
